@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - gentle-flower-9e42687517f347bfbec99b8a4902cf1f
+name: Build and deploy Python app to Azure Web App - shruthajaflask
 
 on:
   push:
@@ -58,6 +58,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'gentle-flower-9e42687517f347bfbec99b8a4902cf1f'
+          app-name: 'shruthajaflask'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ECE0E316425B4154BAE0C48AB8EBC71A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4EE5286BCEB440C1B4237AB32BE852A9 }}
