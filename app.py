@@ -4,17 +4,6 @@ from flask import render_template
 import pyodbc
 import os
 
-from azure.identity import DefaultAzureCredential
-from azure.storage.blob import BlobClient, BlobServiceClient
-
-account_url = "https://shruthaja.blob.core.windows.net/"
-
-creds = DefaultAzureCredential()
-service_client = BlobServiceClient(
-    account_url=account_url,
-    credential=creds
-)
-
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 @app.route("/", methods=['GET'])
