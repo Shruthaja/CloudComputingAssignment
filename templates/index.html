@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<form action="/" method="get">
+    <h1>Search Person</h1>
+    <p>Enter name:  <input type = text name="name"></p>
+    <input type="submit">
+    <img src="{{picture}}">
+    {% for pic in salpics %}
+ <br>   <img src="{{pic}}"><br>
+    {% endfor %}
+</form>
+
+</body>
+</html>
