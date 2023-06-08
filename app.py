@@ -3,7 +3,6 @@ from flask import Flask
 from flask import render_template
 import pyodbc
 import os
-from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobClient, BlobServiceClient
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
