@@ -110,4 +110,5 @@ def change():
     return render_template("change.html",row=row,row2=row2)
 
 if __name__ == "__main__":
-    app.run()
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
