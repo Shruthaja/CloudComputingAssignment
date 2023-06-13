@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Change</title>
+
 </head>
-<body>
+<body style="background-color:coral">
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/change.html" class="active">Change</a></li>
+  <li><a href="/dave.html" >Dave</a></li>
+</ul>
+<br>
 <form action="/change.html" method="get">
-    <p> Change keywords for a person , Enter a name : <input type="=text" name ="cname"></p>
-    <p> New Keywords : <input type="text" name="keywords"></p>
+    <label> Change keywords for a person , Enter a name : </label>
+    <input type="=text" name ="cname"><br><br><br>
+    <label> New Keywords : </label>
+    <input type="text" name="keywords"><br><br>
     <input type="submit">
     </form>
+<br>
 {{row}}
 <br><br>
 <p>========</p>
 <form action="/change.html" method="post">
-    <p> Change salaray for a person , Enter a name : <input type="=text" name ="sname"></p>
-    <p> New salary : <input type="text" name="salary"></p>
+    <label> Change salaray for a person , Enter a name : </label>
+    <input type="=text" name ="sname">
+   <br><br> <label> New salary : </label>
+    <input type="text" name="salary">
     <input type="submit">
     </form>
 {{row2}}
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
 </body>
 </html>

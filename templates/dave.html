@@ -4,18 +4,59 @@
     <meta charset="UTF-8">
     <title>Operations on Dave</title>
 </head>
-<body>
+<body style="background-color:coral">
+<ul>
+  <li><a href="/" >Home</a></li>
+  <li><a href="/change.html" >Change</a></li>
+  <li><a href="/dave.html"  class="active">Dave</a></li>
+</ul>
+<div >
+<h1>Shruthaja P Rao</h1>
+<h2>1002118604</h2>
+</div>
 <form action="/dave.html" method="post" enctype="multipart/form-data">
-<p>Name of person to Change/Add Picture to : <input type="text" name="pname"></p>
-    <p> Upload image : <input type="file" name="picture" accept=".jpg"></p>
+<label>Name of person to Change/Add Picture to : </label>
+    <input type="text" name="pname"><br><br>
+    <label> Upload image :</label>
+     <input type="file" name="picture" accept=".jpg">
+    <br><br>
     <input type="submit">
 </form>
 <img src="{{url}}">
 <br>
 <br>
 <form action="/dave.html" action="get">
-    <p> Select person to ....Eliminate : <input type="text" name="delname"> </p>
+    <p> Select person to remove from database : <input type="text" name="delname"> </p>
 <input type="submit">
 </form>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
 </body>
 </html>
