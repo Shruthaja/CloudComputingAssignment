@@ -10,10 +10,11 @@
   <li><a href="/change.html" >Change</a></li>
   <li><a href="/dave.html"  class="active">Dave</a></li>
 </ul>
-<div >
+<div style="float:right" >
 <h1>Shruthaja P Rao</h1>
 <h2>1002118604</h2>
 </div>
+<div style="margin-top:5%">
 <form action="/dave.html" method="post" enctype="multipart/form-data">
 <label>Name of person to Change/Add Picture to : </label>
     <input type="text" name="pname"><br><br>
@@ -22,13 +23,16 @@
     <br><br>
     <input type="submit">
 </form>
+    </div>
+<div style="margin-top:2%">
 <img src="{{url}}">
-<br>
-<br>
+    </div>
+<div style="margin-top:10%;">
 <form action="/dave.html" action="get">
     <p> Select person to remove from database : <input type="text" name="delname"> </p>
 <input type="submit">
 </form>
+    </div>
 <style>
 ul {
   list-style-type: none;
