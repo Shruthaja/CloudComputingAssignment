@@ -17,7 +17,7 @@ def hello_world():
         server = 'assignmentservershruthaja.database.windows.net'
         database = 'assignment1'
         username = 'shruthaja'
-        password = 'mattu4-12'
+        password = ''
         driver = '{ODBC Driver 17 for SQL Server}'
 
         # Establish the connection
@@ -62,7 +62,7 @@ def change():
         server = 'assignmentservershruthaja.database.windows.net'
         database = 'assignment1'
         username = 'shruthaja'
-        password = 'mattu4-12'
+        password = ''
         driver = '{ODBC Driver 17 for SQL Server}'
         # Establish the connection
         conn = pyodbc.connect(f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}')
@@ -84,7 +84,7 @@ def change():
         server = 'assignmentservershruthaja.database.windows.net'
         database = 'assignment1'
         username = 'shruthaja'
-        password = 'mattu4-12'
+        password = ''
         driver = '{ODBC Driver 17 for SQL Server}'
         # Establish the connection
         conn = pyodbc.connect(f'DRIVER={driver};SERVER={server};DATABASE={database};UID={username};PWD={password}')
@@ -104,7 +104,7 @@ def dave():
     server = 'assignmentservershruthaja.database.windows.net'
     database = 'assignment1'
     username = 'shruthaja'
-    password = 'mattu4-12'
+    password = ''
     driver = '{ODBC Driver 17 for SQL Server}'
 
     # Establish the connection
